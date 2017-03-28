@@ -1,0 +1,403 @@
+html,main,body{
+	height: 100%;
+}
+.scroll-sy{
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	/*background-color: #deecdf;*/
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content:center;
+}
+
+ .container-mn{
+	width: 80%;
+	height: 100%;
+	align-self:center;
+	/*background-color: red;*/
+}
+.container .container-mn .cont{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.cont div{
+	align-self:center;
+	color: #24aeb9;	
+}
+.container .container-mn .cont .title img{
+	width: 450px;
+	height: 80px;
+	animation:move 1s ease-in-out 0.2s backwards;
+}
+@keyframes move{
+	0%{
+		transform:translateX(200px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+.container .container-mn .cont h2{
+	font-size: 90px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 75px;
+	font-weight: 800;
+	letter-spacing: 8px;
+	animation:show 1s ease-in-out 0.2s backwards;
+}
+@keyframes show{
+	0%{
+		transform:translateX(-200px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+.container .container-mn .cont h4{
+	font-size: 30px;
+	margin:25px 40px 0 40px;
+}
+.container .container-mn .cont ul{
+	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content:center;
+	margin-top: 30px;
+}
+.container .container-mn .cont ul li{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	border: 1px solid white;
+	font-size: 15px;
+	align-self:center;
+	margin: 0 20px;
+	color: white;
+	background-color: transparent;
+}
+.container .container-mn .cont ul li:hover{
+	cursor: pointer;
+	color: #fbff00;
+    border-color: #a37d6d;
+}
+/*导航条*/
+nav{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	line-height: 45px;
+	background: white;
+	box-shadow: 0 0 10px 1px #000; 
+}	
+a{
+	text-decoration: none;
+	color: white;
+}
+.nav .header{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content:space-between;
+}
+.nav .header-img{
+	height:80px;
+}
+.nav .header-img img{
+	width: 70px;
+	margin: 8px 80px;
+}
+.nav .header-ul {
+	width: 60%;
+	height:80px; 
+	background-color: cadetblue;
+}
+.nav .header-ul ul{
+	display: flex;
+}
+.nav .header-ul ul li{
+	flex: 1;
+	font-size: 20px;
+	/*text-indent: 22px;*/
+	text-align: center;
+	line-height: 90px;
+}
+/*第二页基本信息*/
+.scroll-cont{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	padding: 150px 0;
+}
+/*所有section下第二层div样式*/
+.div-main{
+	width: 80%;
+	height: 100%;
+	margin:auto;
+}
+.scroll-cont .scroll-cont-info{
+	width: 100%;
+	height: 50%;
+	text-align: center;
+}
+.scroll-cont .scroll-cont-info h1{
+	font-weight: 800;
+	letter-spacing: 5px;
+	line-height: 140px;
+	font-size: 50px;
+}
+.scroll-cont .scroll-cont-info p{
+	font-size: 20px;
+	line-height: 35px;
+	text-align: left;
+	width: 100%;
+	text-indent: 44px;
+}
+.scroll-cont .scroll-cont-info2{
+	width: 90%;
+	height: 50%;
+	display: flex;
+	margin: auto;
+}
+.scroll-cont .scroll-cont-info2 .left{
+	width: 25%;
+	height: 70%;
+	align-self: center;
+	left: 10px;
+	line-height: 30px;
+}
+.scroll-cont .scroll-cont-info2 .left p{
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin: 30px 35px;
+}
+.scroll-cont .scroll-cont-info2 .left span{
+	font-weight: 100;
+}
+.scroll-cont .scroll-cont-info2 .center{
+	width: 37%;
+	height: 70%;
+	align-self: center;
+	left: 10px;
+}
+.scroll-cont .scroll-cont-info2 .center .name{
+	font-size: 30px;
+	font-family: Arizonia,cursive;
+}
+.scroll-cont .scroll-cont-info2 .center p{
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: 1px;
+	margin: 30px 35px;
+}
+.scroll-cont .scroll-cont-info2 .center span{
+	font-weight: 100;
+}
+.scroll-cont .scroll-cont-info2 .right{
+	width: 37%;
+	height: 100%;
+    margin-left: 10px;
+}
+.scroll-cont .scroll-cont-info2 .right p{
+	font-size: 20px;
+	font-weight: 700;
+	margin: 10px;
+}
+.scroll-cont .scroll-cont-info2 .right ul li{
+	display: inline-block;
+    font-size: 16px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    line-height: 50px;
+    margin: 15px 25px;
+     background-color: #f0f5f0;
+}
+.scroll-cont .scroll-cont-info2 .right ul li p{
+	width: 80px;
+    height: 45px;   
+    font-weight: 100;
+}
+/*技能*/
+.scroll-skill{
+	width: 100%;
+	min-height: 100%;
+	background-color: #f0f2f7;
+	padding: 150px 0;
+	overflow-x:hidden;
+}
+.scroll-skill .scroll-skill-hea{
+	width: 100%;
+	height: 20%;
+}
+.scroll-skill .scroll-skill-hea h1{
+	font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.scroll-skill .scroll-skill-mdl{
+	width: 100%;
+	min-height: 80%;
+	display: flex;
+	flex-wrap:wrap;
+	padding: 70px;
+}
+.scroll-skill .scroll-skill-mdl-01{
+	padding: 25px 35px;
+	width: 25%;
+	text-align: center;
+}
+.scroll-skill .scroll-skill-mdl-01 .skill-head{
+	min-width: 170px;
+	min-height: 170px;
+	display: block;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.scroll-skill .scroll-skill-mdl-01 .skill-head p{
+	color: grey;
+    font-size: 40px;
+    position: absolute;
+    text-align: center;
+    margin-top: 82px;
+    margin-left: 95px;
+    width: 80px;
+    height: 51px;
+}
+}
+.scroll-skill .scroll-skill-mdl-01 .skill-head p sub{
+	font-size: 18px;
+    top: -1.2em;
+    bottom: .8em;
+    height: 0;
+    line-height: 1;
+    vertical-align: baseline;
+}
+.scroll-skill .scroll-skill-mdl-01 .skill-cont{
+	min-width: 100%;
+	text-align: center;
+	line-height: 50px;
+}
+
+.scroll-skill .scroll-skill-mdl-01 .skill-cont h3{
+	color: #2c3e50;
+    font-size: 22px;
+    font-weight: 700;
+}
+.scroll-skill .scroll-skill-mdl-01 .skill-cont p {
+    color: #7d878f;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/*经验*/
+.scroll-exp{
+	width: 100%;
+	height: 100%;
+	background-attachment:fixed;
+	background-image: url(../image/lu.jpg);
+	margin: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: white;
+}
+.scroll-exp .scroll-title{
+	width: 100%;
+	display: flex;
+}
+.scroll-exp .scroll-title h5{
+	width: 31.33%;
+    display: block;
+    height: 1px;
+    background: #FFF;
+    margin:80px auto;
+}
+.scroll-exp .scroll-title h1{
+	font-weight: 800;
+	letter-spacing: 5px;
+	line-height: 140px;
+	font-size: 50px;
+}
+.scroll-exp .scroll-content{
+	width: 100%;
+	height: 60%;
+	background-color: rgba(0, 0, 0, 0.49);
+	display: flex;
+	line-height: 30px;
+}
+.scroll-exp .scroll-content p{
+	font-weight: 800;
+	color: #df9610;
+}
+.scroll-exp .scroll-content h3{
+	text-align: center;
+}
+.scroll-exp .scroll-content h4{
+	text-indent: 44px;
+}
+.scroll-exp .scroll-content .line{
+	border: 2px solid white;
+	height: 300px;
+	margin: auto 0 auto 50px;
+}
+.scroll-exp .scroll-content .scroll-cont01-xt{
+	width: 50%;
+	margin-left: 20px;
+}
+.scroll-exp .scroll-content .scroll-cont01-bbs{
+	/*width: 50%;*/
+	margin-left: 20px;
+}
+
+/*尾部*/
+.scroll-footer{
+	background-color: #5f9ea0;
+	height: 100px;
+	text-align: center;
+}
+.scroll-footer p{
+	line-height: 50px;
+}
+
+/*回到头部*/
+#gotoTop{
+	display: none;
+    position: fixed;
+    left: 50%;
+    cursor: pointer;
+    margin-top: -104px;
+    margin-left: 520px;
+    padding: 9px 4px;
+    width: 20px;
+    text-align: center;
+    background: transparent;
+    font-size: 15px;
+    color: #cac9c2;
+    font-weight: 800;
+    border: 1px solid #c1c1c1;
+    line-height: 20px;
+}
+/*用CSS表达式(expression)来实现ie6下position:fixed效果*/
+#gotoTop{
+	_position:absolute;
+	_top:expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px")
+}
+/*鼠标进入的反馈效果*/
+#gotoTop:hover{
+	color:#937a69;
+	text-decoration:none;
+}
