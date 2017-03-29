@@ -1,0 +1,161 @@
+html,main,body{
+	height: 100%;
+	margin:0;
+	padding: 0;
+}
+hr{
+	border-top: 3px solid #d89841;
+	width: 10%;
+	margin: 35px auto;
+}
+#myinfo,#myresume,#myskills,#footer{
+	padding-top: 150px;
+}
+/*首页*/
+#home{
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+}
+#home .container .cont-sy{
+	margin-top: 15%;
+}
+#home .container .cont-sy .title img{
+	width: 40%;
+	height: 30%;
+	animation:move 1s ease-in-out 0.2s backwards;
+}
+@keyframes move{
+	0%{
+		transform:translateX(200px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+#home .container .cont-sy h2{
+	font-size: 60px;
+    letter-spacing: 8px;
+    color: #3dab9d;
+    font-weight: 600;
+	animation:show 1s ease-in-out 0.2s backwards;
+}
+@keyframes show{
+	0%{
+		transform:translateX(-200px);
+	}
+	100%{
+		transform:translateX(0px);
+	}
+}
+#home .container .cont-sy h4{
+	font-size: 25px;
+    line-height: 50px;
+    color: white;
+}
+#home .container .cont-sy ul li{
+	border: 1px solid white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 25px;
+    line-height: 70px;
+    font-size: 15px;
+    color: white;
+}
+#home .container .cont-sy ul li:hover{
+	cursor: pointer;
+	color: #ff8002;
+	border-color: #c1a6a6;
+}
+/*导航条*/
+#nav{
+	width: 100%;
+	height: 25%;
+}
+.navbar-default{
+	z-index: 1000;
+}
+/*基本信息*/
+#myinfo .myinfo-div .myinfo-div-zp h1{
+	text-align: center;
+	font-size: 60px;
+    font-weight: 800;
+}
+#myinfo .myinfo-div .myinfo-div-zp p{
+	width: 90%;
+	margin: auto;
+	text-indent: 44px;
+	line-height: 25px;
+    font-size: 17px;
+    font-weight: 500;
+}
+#myinfo .myinfo-div .myinfo-div-info2{
+	margin: 5%;
+}
+#myinfo .myinfo-div .myinfo-div-info2 p{
+	font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+#myinfo .myinfo-div .myinfo-div-info2 span{
+    font-weight: 100;
+}
+#myinfo .myinfo-div .myinfo-div-info2 ul li{
+	width: 84px;
+    height: 40px;
+    background: #d6d5d5;
+    margin: 10px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*我的技能*/
+#myskills .myskills-div h1{
+	font-size: 60px;
+    font-weight: 800;
+}
+#myskills .myskills-div h2{
+	position: relative;
+	font-size: 40px;
+	top: 140px;
+	color: grey;
+}
+#myskills .myskills-div sup{
+	font-size: 18px;
+}
+#myskills .myskills-div p{
+	color: grey;
+}
+/*尾部*/
+.footer-div{
+	background-color: #f2f2f2;
+    box-shadow: 0px 0px 20px black;
+    padding: 10px;
+}
+/*媒体自查询*/
+@media all and (min-width: 300px) and (max-width: 500px) {  
+	html,body{
+		overflow-x:hidden;
+	}
+	#home .container .cont-sy{
+		margin-top: 25%;
+	}
+	#home .container .cont-sy .title img{
+		width: 260px;
+    	height: 50px;
+	}
+	#home .container .cont-sy h2{
+		font-size: 40px;
+		color: white;
+	}
+	#home .container .cont-sy h4{
+		font-size: 20px;
+		color: white;
+		color: #f4d1b0;
+	}
+	#myresume{
+		/*margin-top: 88%;*/
+	}
+}
