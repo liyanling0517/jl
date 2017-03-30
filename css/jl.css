@@ -73,7 +73,8 @@ hr{
 /*导航条*/
 #nav{
 	width: 100%;
-	height: 25%;
+	/*height: 25%;*/
+	position: absolute;
 }
 .navbar-default{
 	z-index: 1000;
