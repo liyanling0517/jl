@@ -2,7 +2,29 @@
 var navTop= document.querySelector('#nav');
 var nav = document.querySelector('.navbar-default');
 var toSection = document.querySelectorAll('.navbar-nav li');
-console.log(toSection);
+// console.log(toSection);
+
+// 窗口监听事件
+window.onscroll = function(){
+  // 导航条置顶事件
+  var _navTop = navTop.offsetTop - window.scrollY; 
+  if(_navTop<0){
+    nav.style.position = "fixed";
+    nav.style.width = "100%";
+    nav.style.top = 0;
+  }else{
+    nav.style.position = "";
+  }
+
+// 窗口滚动到我的技能页开始绘制canvas
+  var skillsTop = skills.offsetTop - window.scrollY;
+    if(skillsTop<=50 && state){
+      for(var i=0;i<arr.length;i++){
+        drawScore(arr[i],cvs[i],num[i]);
+      }
+      return state = false;
+    }
+}
 //  锚点定位+平滑过渡
 $(function(){
     $(".goto").on('click',function(){
@@ -47,27 +69,7 @@ $(function(){
       },1000/60);
     }
 
-// 窗口监听事件
-window.onscroll = function(){
-  // 导航条置顶事件
-  var _navTop = navTop.offsetTop - window.scrollY; 
-  if(_navTop<0){
-    nav.style.position = "fixed";
-    nav.style.width = "100%";
-    nav.style.top = 0;
-  }else{
-    nav.style.position = "";
-  }
 
-// 窗口滚动到我的技能页开始绘制canvas
-  var skillsTop = skills.offsetTop - window.scrollY;
-    if(skillsTop<=50 && state){
-      for(var i=0;i<arr.length;i++){
-        drawScore(arr[i],cvs[i],num[i]);
-      }
-      return state = false;
-    }
-}
 
 
 

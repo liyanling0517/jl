@@ -12,11 +12,12 @@ hr{
 	padding-top: 150px;
 }
 /*首页*/
-#home{
+.scroll-sy{
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
 	height: 100%;
+	background-image: url(../image/bg3.jpg);
 }
 #home .container .cont-sy{
 	margin-top: 15%;
@@ -136,9 +137,6 @@ hr{
 }
 /*媒体自查询*/
 @media all and (min-width: 300px) and (max-width: 500px) {  
-	html,body{
-		overflow-x:hidden;
-	}
 	#home .container .cont-sy{
 		margin-top: 25%;
 	}
@@ -154,8 +152,5 @@ hr{
 		font-size: 20px;
 		color: white;
 		color: #f4d1b0;
-	}
-	#myresume{
-		/*margin-top: 88%;*/
 	}
 }
