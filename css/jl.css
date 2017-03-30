@@ -112,7 +112,11 @@ hr{
     line-height: 40px;
     text-align: center;
 }
-
+#myresume{
+	background-image: url(../image/01.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
 /*我的技能*/
 #myskills .myskills-div h1{
 	font-size: 60px;

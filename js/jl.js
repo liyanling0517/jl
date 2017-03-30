@@ -63,7 +63,7 @@ $(function(){
           ctx.beginPath();
           ctx.arc(106,106,70,Math.PI / 180 * -91,Math.PI / 180 * (index - 90),false);
           ctx.stroke();
-          index++;
+          index+=3;
           h.textContent = ~~(index / 360*100)+'%';
         }
       },1000/60);
