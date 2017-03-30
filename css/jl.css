@@ -60,7 +60,7 @@ hr{
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    margin-left: 25px;
+    margin: 15px 23px;
     line-height: 70px;
     font-size: 15px;
     color: white;
@@ -80,6 +80,9 @@ hr{
 	z-index: 1000;
 }
 /*基本信息*/
+#myinfo{
+	padding-bottom: 150px;
+}
 #myinfo .myinfo-div .myinfo-div-zp h1{
 	text-align: center;
 	font-size: 60px;
@@ -156,6 +159,6 @@ hr{
 	#home .container .cont-sy h4{
 		font-size: 20px;
 		color: white;
-		color: #f4d1b0;
+		color: #623000;
 	}
 }
